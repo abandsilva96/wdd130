@@ -1,12 +1,19 @@
 :root {
     --primary-color: #0B4F6C;
     /* Deep river blue */
+
     --accent1-color: #F4A261;
     /* Adventure orange */
+
     --accent2-color: #F7FFF7;
     /* Soft white */
+
+    --text-color: #1F2933;
+    /* Dark text for better contrast */
+
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+
     --background-color: rgb(255 255 255 / 80%);
 }
 
@@ -18,7 +25,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color)
+    color: var(--text-color);
 }
 
 header,
@@ -42,9 +49,32 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 16px;
 }
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--accent2-color);
+}
+
+/* HERO */
 
 .hero {
     position: relative;
@@ -62,9 +92,9 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
+
+    background-color: rgb(244 162 97 / 70%);
+    color: var(--text-color);
 }
 
 .hero article {
@@ -75,7 +105,7 @@ h1 {
     width: 90%;
     padding: 20px;
 
-    background-color: var(--background-color)
+    background-color: var(--background-color);
 }
 
 .hero article img {
@@ -83,24 +113,7 @@ h1 {
     width: 125px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 16px;
-}
-
-header img {
-    width: 100px;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+/* HISTORY */
 
 .history {
     display: grid;
@@ -118,6 +131,8 @@ nav {
     width: 100%;
     height: auto;
 }
+
+/* ADVENTURES */
 
 .adventures {
     display: flex;
@@ -139,11 +154,7 @@ nav {
     height: auto;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+/* FOOTER */
 
 footer {
     display: flex;
@@ -159,4 +170,8 @@ footer {
 .socialmedia img {
     width: 30px;
     height: 30px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
