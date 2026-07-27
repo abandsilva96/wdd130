@@ -175,3 +175,8 @@ footer {
 .socialmedia a {
     text-decoration: none;
 }
+
+.history,
+.adventures {
+    border: 2px solid var(--accent1-color);
+}
