@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(6, 11, 129);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: 10px;
+}
+
+legend {
+    color: rgb(6, 11, 129);
+    font-size: 1.2rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(6, 11, 129);
+    color: white;
+    border-radius: 10px;
+    border: none
+}
+
+button:hover {
+    background-color: lightskyblue;
+}
