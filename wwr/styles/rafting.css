@@ -180,3 +180,148 @@ footer {
 .adventures {
     border: 2px solid var(--accent1-color);
 }
+
+/* CONTACT PAGE */
+
+main > h1 {
+    position: static;
+    width: auto;
+    margin: 25px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* COMPANY CONTACT INFORMATION */
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid var(--accent1-color);
+}
+
+.contact-info address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.contact-info iframe {
+    width: 100%;
+    border: 0;
+}
+
+/* EMPLOYEE PROFILES */
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--accent1-color);
+}
+
+.employees h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.employees figure {
+    margin: 0;
+}
+
+.employees img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.employees figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    padding: 25px;
+    border: 2px solid var(--accent1-color);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    gap: 15px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form fieldset {
+    padding: 15px;
+    display: grid;
+    gap: 10px;
+    border: 1px solid #aaa;
+}
+
+.contact-form legend {
+    padding: 0 8px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.contact-form fieldset label {
+    font-weight: normal;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.contact-form button {
+    justify-self: center;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
